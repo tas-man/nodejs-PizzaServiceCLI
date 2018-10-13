@@ -14,8 +14,10 @@ through the console/terminal and receive output accordingly.
 
 
 ---------------------------------------------------------------------------------------------------------------
-DOCUMENTATION   (Accepted CLI commands)
+DOCUMENTATION   
 ---------------------------------------------------------------------------------------------------------------
+(Accepted CLI commands)
+
 'help'            - 'Show manual'
 
 'list menu'       - 'Show list of menu items'
@@ -37,5 +39,6 @@ DOCUMENTATION   (Accepted CLI commands)
 
 (Please refer to "nodejs-PizzaServiceFrontend" repository for more details on the how to setup the application locally)
 https://github.com/tas-man/nodejs-PizzaServiceFrontend
+
 (Please refer to "nodejs-PizzaServiceAPI" repository for more details on the API)
 https://github.com/tas-man/nodejs-PizzaServiceAPI
