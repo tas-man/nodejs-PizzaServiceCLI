@@ -4,25 +4,14 @@
 
 
 
-Business front attached to a restful API
+Command Line Tool
 
 
-This is a project featuring both the UI, frontend logic and server side structures of a fictional 
-online Pizza Service. Both frontend and backend were written using NodeJs and no external frameworks.
+This is a project featuring a CLI based on the fictional online Pizza Service project. 
+(Please see repository: nodejs-PizzaServiceFrontend)
 
-The frontend lets users perform many of the same functions as most e-commerce sites.
-Users are able to create and manage accounts, login and place orders etc.
-The backend is made up of a restful API allowing the application to perform CRUD operations, 
-and serve up HTML, among other functions. 
-
-
-
-
-Additional features:
-
-The application also interacts with the Stripe.com API to facilitate credit card payments,
-and with the Mailgun.com API to send verification emails to users when a succesful payment has
-been performed.
+The CLI is started along with the server and lets users input commands 
+through the console/terminal and receive output accordingly.
 
 
 
