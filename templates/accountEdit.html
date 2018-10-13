@@ -1,0 +1,70 @@
+<h1>Edit Your Account</h1>
+
+<hr/>
+<h2>Make changes to your account details</h2>
+<div class="formWrapper">
+  <form id="accountEdit1" action="/api/users" method="PUT">
+    <input type="hidden" name="_method" value="PUT"/>
+    <div class="formError"></div>
+    <div class="formSuccess">Changes were saved successfully</div>
+    <input class="hiddenPhoneNumberInput" type="hidden" name="phone"/>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Phone Number</div>
+      <input class="disabled displayPhoneInput" name="displayPhone" type="text" disabled/>
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">First Name</div>
+      <input class="nameInput" name="name" type="text" placeholder="John"/>
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Last Name</div>
+      <input class="lnameInput" name="lname" type="text" placeholder="Doe"/>
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Email</div>
+      <input class="emailInput" name="email" type="text" placeholder="something@what.com"/>
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Address</div>
+      <input class="addressInput" name="address" type="text" placeholder="Nowhere Avenue 10"/>
+    </div>
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Save changes</button>
+    </div>
+  </form>
+</div>
+
+<hr/>
+<h2>Change Your Password</h2>
+<div class="formWrapper">
+  <form id="accountEdit2" action="/api/users" method="PUT">
+    <input type="hidden" name="_method" value="PUT"/>
+    <div class="formError"></div>
+    <div class="formSuccess">Password was saved successfully</div>
+    <input class="hiddenPhoneNumberInput" type="hidden" name="phone"/>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Change Password</div>
+      <input name="password" type="password" placeholder="Make it strong!"/>
+    </div>
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Save New Password</button>
+    </div>
+  </form>
+</div>
+
+<hr/>
+<h2>Delete Your Account</h2>
+<div class="formWrapper">
+  <form id="accountEdit3" action="/api/users" method="DELETE">
+    <input type="hidden" name="_method" value="DELETE"/>
+    <div class="formError"></div>
+    <div class="warning">Note: Account will been permanently deleted!</div>
+    <input class="hiddenPhoneNumberInput" type="hidden" name="phone"/>
+
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta gray">Delete Account</button>
+    </div>
+  </form>
+</div>

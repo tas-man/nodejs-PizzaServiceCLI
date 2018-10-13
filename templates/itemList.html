@@ -1,0 +1,154 @@
+<h1>MENU</h1>
+<h2>Please select your favorites, or try something new</h2>
+
+<hr />
+<div class="itemListWrapper">
+  <h2 class="itemListHeader">Pizzas</h2>
+    <!-- Hardcoded dummy data for demonstrational purposes -->
+    <ul class="productList">
+      <li class="productListItem">
+        <div class="productInfo">
+          <div class="productName">Margherita</div>
+          <div class="productToppings">
+          <strong>Toppings: </strong>
+          <span>Tomato Sauce, Cheese</span>
+        </div>
+        </div>
+        <div class="productInfo">
+          <div class="cartCtaWrapper">
+            <form id="itemList1" action="/api/carts" method="POST">
+              <input type="hidden" name="_method" value="POST"/>
+              <input type="hidden" name="itemId" value="1"/>
+              <!-- User Inputs -->
+              <div class="productQuantity">
+                <div class="productQuantityLabel">Quantity</div>
+                <input type="number" min="1" max="10" value="1" name="quantity"/>
+              </div>
+              <div class="productPrice">7,00 €</div>
+              <button id="addToCartCTA" class="cartCTA addToCart" type="submit">Add to Cart</button>
+              <!-- Action Messages -->
+              <div class="formError">Failed</div>
+              <div class="formSuccess">Item added to cart</div>
+            </form>
+          </div>
+        </div>
+      </li>
+
+      <li class="productListItem">
+        <div class="productInfo">
+          <div class="productName">Salami</div>
+          <div class="productToppings">
+          <strong>Toppings: </strong>
+          <span>Tomato Sauce, Cheese, Salami</span>
+        </div>
+        </div>
+        <div class="productInfo">
+          <div class="cartCtaWrapper">
+            <form id="itemList2" action="/api/carts" method="POST">
+              <input type="hidden" name="_method" value="POST"/>
+              <input type="hidden" name="itemId" value="2"/>
+              <!-- User Inputs -->
+              <div class="productQuantity">
+                <div class="productQuantityLabel">Quantity</div>
+                <input type="number" min="1" max="10" value="1" name="quantity"/>
+              </div>
+              <div class="productPrice">7,50 €</div>
+              <button id="addToCartCTA" class="cartCTA addToCart" type="submit">Add to Cart</button>
+              <!-- Action Messages -->
+              <div class="formError">Failed</div>
+              <div class="formSuccess">Item added to cart</div>
+            </form>
+          </div>
+        </div>
+      </li>
+
+      <li class="productListItem">
+        <div class="productInfo">
+          <div class="productName">Seafood</div>
+          <div class="productToppings">
+          <strong>Toppings: </strong>
+          <span>Tomato Sauce, Cheese, Tuna</span>
+        </div>
+        </div>
+        <div class="productInfo">
+          <div class="cartCtaWrapper">
+            <form id="itemList3" action="/api/carts" method="POST">
+              <input type="hidden" name="_method" value="POST"/>
+              <input type="hidden" name="itemId" value="3"/>
+              <!-- User Inputs -->
+              <div class="productQuantity">
+                <div class="productQuantityLabel">Quantity</div>
+                <input type="number" min="1" max="10" value="1" name="quantity"/>
+              </div>
+              <div class="productPrice">7,50 €</div>
+              <button id="addToCartCTA" class="cartCTA addToCart" type="submit">Add to Cart</button>
+              <!-- Action Messages -->
+              <div class="formError">Failed</div>
+              <div class="formSuccess">Item added to cart</div>
+            </form>
+          </div>
+        </div>
+      </li>
+
+      <li class="productListItem">
+        <div class="productInfo">
+          <div class="productName">Vegetarian</div>
+          <div class="productToppings">
+          <strong>Toppings: </strong>
+          <span>Tomato Sauce, Cheese, Olives, Peppers</span>
+        </div>
+        </div>
+        <div class="productInfo">
+          <div class="cartCtaWrapper">
+            <form id="itemList4" action="/api/carts" method="POST">
+              <input type="hidden" name="_method" value="POST"/>
+              <input type="hidden" name="itemId" value="4"/>
+              <!-- User Inputs -->
+              <div class="productQuantity">
+                <div class="productQuantityLabel">Quantity</div>
+                <input type="number" min="1" max="10" value="1" name="quantity"/>
+              </div>
+              <div class="productPrice">8,00 €</div>
+              <button id="addToCartCTA" class="cartCTA addToCart" type="submit">Add to Cart</button>
+              <!-- Action Messages -->
+              <div class="formError">Failed</div>
+              <div class="formSuccess">Item added to cart</div>
+            </form>
+          </div>
+        </div>
+      </li>
+
+      <li class="productListItem">
+        <div class="productInfo">
+          <div class="productName">Meatlover</div>
+          <div class="productToppings">
+          <strong>Toppings: </strong>
+          <span>Tomato Sauce, Cheese, Salami, Ham</span>
+        </div>
+        </div>
+        <div class="productInfo">
+          <div class="cartCtaWrapper">
+            <form id="itemList5" action="/api/carts" method="POST">
+              <input type="hidden" name="_method" value="POST"/>
+              <input type="hidden" name="itemId" value="5"/>
+              <!-- User Inputs -->
+              <div class="productQuantity">
+                <div class="productQuantityLabel">Quantity</div>
+                <input type="number" min="1" max="10" value="1" name="quantity"/>
+              </div>
+              <div class="productPrice">8,50 €</div>
+              <button id="addToCartCTA" class="cartCTA addToCart" type="submit">Add to Cart</button>
+              <!-- Action Messages -->
+              <div class="formError">Failed</div>
+              <div class="formSuccess">Item added to cart</div>
+            </form>
+          </div>
+        </div>
+      </li>
+    </ul>
+</div>
+
+<hr />
+<div class="inputWrapper ctaWrapper">
+  <a class="cta green" href="/cart/checkout">Order Now</a>
+</div>

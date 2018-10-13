@@ -1,0 +1,36 @@
+<h1>Create your account</h1>
+<h2>Signing up is fast and easy</h2>
+
+<div class="formWrapper">
+  <form id="accountCreate" action="/api/users" method="POST">
+    <div class="formError"></div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">First Name</div>
+      <input name="name" type="text" placeholder="John"/>
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Last Name</div>
+      <input name="lname" type="text" placeholder="Doe"/>
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Phone Number</div>
+      <input name="phone" type="text" placeholder="555 1234567"/>
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Email</div>
+      <input name="email" type="text" placeholder="something@what.com"/>
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Address</div>
+      <input name="address" type="text" placeholder="Nowhere Avenue 10"/>
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Create a Password</div>
+      <input name="password" type="password" placeholder="Make it strong!"/>
+    </div>
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Register Now</button>
+    </div>
+  </form>
+</div>

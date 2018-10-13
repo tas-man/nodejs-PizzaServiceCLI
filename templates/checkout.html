@@ -1,0 +1,47 @@
+<h1>Checkout</h1>
+<h2>Verify cart contents and place your order</h2>
+<hr />
+
+<div class="tableListWrapper">
+<table id="cartListTable">
+  <tr>
+    <th>Items</th>
+    <th>Quantity</th>
+    <th>Price</th>
+  </tr>
+  <!-- Rows will be added here by the page data loader function -->
+</table>
+<div class="totalAmount">Total Amount: <span id="totalAmount">0,00</span>€</div>
+</div>
+
+<!-- Hardcoded dummy payment details for demonstrational purposes -->
+<form id="checkoutPayment" action="/api/orders" method="POST">
+  <input type="hidden" name="_method" value="POST"/>
+  <div class="formError">Payment Failed</div>
+  <div class="formSuccess">Payment was completed successfully.&#10;
+    A verification message has been sent to your email address.&#10;
+    You will be redirected to the orders page shortly...
+  </div>
+  <div id="noCartMessage" class="warning">
+    Your cart is empty, please add an item from the menu
+  </div>
+  <!-- User Inputs -->
+  <button id="makePaymentCTA" class="cta green" type="submit">Make Payment</button>
+</form>
+
+
+<hr />
+<h5>Empty Your Cart without buying</h5>
+<form id="checkoutCartDeletion" action="/api/carts" method="DELETE">
+  <input type="hidden" name="_method" value="DELETE"/>
+  <div class="formError">Cart Deletion Failed</div>
+  <div class="formSuccess">Your cart has been emptied</div>
+  <!-- User Inputs -->
+  <button id="deleteCartCTA" class="cta gray" type="submit">Empty Cart</button>
+</form>
+
+<hr />
+<h5>Follow link below to view previous orders</h5>
+<div id="checkoutViewOrders" class="ctaWrapper">
+  <a class="cta gray" href="/order/log">View Orders</a>
+</div>
